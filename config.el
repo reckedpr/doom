@@ -2,7 +2,9 @@
 
 (setq doom-theme 'doom-gruvbox)
 (setq display-line-numbers-type t)
+
 (setq org-directory "~/org/")
+(setq org-default-notes-file (concat org-directory "/inbox.org"))
 
 (setq auto-save-visited-interval 15)
 (auto-save-visited-mode +1)
