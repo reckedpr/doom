@@ -20,3 +20,28 @@
            "|"
            "DONE(d)"
            "KILL(k)"))))
+
+(after! org-capture
+  (setq org-capture-templates
+        '(
+          ("t" "todo" entry
+           (file "~/org/inbox.org")
+           "* TODO %?\n%U\n"
+           :prepend t)
+
+          ("T" "todo today" entry
+           (file "~/org/inbox.org")
+           "* TODO %?\nDEADLINE: %t\n%U\n"
+           :prepend t)
+
+          ("i" "inbox" entry
+           (file "~/org/inbox.org")
+           "* %?\n%U\n"
+           :prepend t)
+
+          ("v" "clip to inbox" entry
+           (file "~/org/inbox.org")
+           "* %x\n%U\n%?"
+           :prepend t)
+          )))
+
