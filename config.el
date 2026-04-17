@@ -9,3 +9,12 @@
 
 (add-hook 'org-mode-hook
           (lambda () (org-autolist-mode)))
+
+(after! org
+  (setq org-todo-keywords
+        '((sequence
+           "TODO(t)"
+           "WAIT(w)"
+           "|"
+           "DONE(d)"
+           "KILL(k)"))))
