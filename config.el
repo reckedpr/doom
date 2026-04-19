@@ -43,5 +43,9 @@
            (file "~/org/inbox.org")
            "* %x\n%U\n%?"
            :prepend t)
+
+          ("j" "mini journal" entry
+            (file+datetree "~/org/journal.org")
+            "* %?\nEntered on %U\n")
           )))
 
