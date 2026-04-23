@@ -44,8 +44,8 @@
            "* %x\n%U\n%?"
            :prepend t)
 
-          ("j" "mini journal" entry
+          ("j" "journal" entry
             (file+datetree "~/org/journal.org")
-            "* %?\nEntered on %U\n")
+            "* %<%H:%M>\n- mood :: %?\n- win  :: \n- did  :: \n- thought :: \n")
           )))
 
